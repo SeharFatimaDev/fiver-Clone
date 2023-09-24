@@ -1,0 +1,410 @@
+.container2 {
+  display: flex;
+  align-items: center;
+  background-color: #0f6433;
+  /* Vertically center the content */
+}
+
+.hero {
+  flex: 2;
+  /* Allow the hero div to grow and take available space */
+  display: flex;
+  justify-content: space-between;
+  /* Place content at each end */
+  align-items: center;
+  /* Vertically center the content */
+}
+
+.hero img {
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its container */
+}
+
+.text {
+  flex: 1;
+  /* Allow the text div to grow and take available space */
+}
+
+.hero img {
+  background-color: #0f6433;
+  order: 2;
+}
+
+.Navbar {
+  background-color: #0f6433;
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header {
+  background-color: #0f6433;
+  padding: 10px 0;
+  margin: 0;
+  color: white;
+}
+
+/* Style the logo (Fiverr) */
+.Navbar h3,
+header {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #0f6433;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f6433;
+  ;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style each item in the dropdown */
+.dropdown-content a {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the language and other links */
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Style the "Join" button */
+.Navbar button,
+header button {
+  background-color: transparent;
+  /* Set the background color to transparent */
+  color: white;
+  border: 2px solid white;
+  /* Add a white border */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+  /* Add transitions for smooth hover effect */
+}
+
+/* Add a hover effect to change the background color and border color */
+.Navbar button,
+header button:hover {
+  background-color: #0f6433;
+  /* Change the background color on hover */
+  border-color: rgba(255, 255, 255, 0.3);
+  /* Change the border color on hover */
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.All {
+  display: flex;
+  /* Display images in a row */
+  overflow: hidden;
+  /* Hide overflow for sliding effect */
+}
+
+/* Style for each image container */
+.All .ImageAll {
+  position: relative;
+  /* Position for absolute caption */
+  margin-right: 20px;
+  /* Add some spacing between images */
+}
+
+/* Style for each image */
+.All .ImageAll img {
+  width: 300px;
+  /* Set your desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+  transition: transform 0.5s ease;
+  /* Add sliding effect */
+}
+
+/* Style for captions */
+.All .ImageAll .caption {
+  position: absolute;
+  /* Position the caption absolutely */
+  bottom: 0;
+  /* Place caption at the bottom of the image */
+  left: 0;
+  /* Align caption to the left */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Background color for caption */
+  color: white;
+  /* Text color for caption */
+  padding: 5px;
+  /* Add some padding to the caption */
+  width: 100%;
+  /* Make caption span the full width of the image */
+  box-sizing: border-box;
+  /* Include padding in width calculation */
+  opacity: 0;
+  /* Initially hide caption */
+  transition: opacity 0.3s ease;
+  /* Add fade-in effect to caption */
+}
+
+/* Hover effect for images */
+.All .ImageAll:hover img {
+  transform: translateX(20px);
+  /* Adjust the sliding distance */
+}
+
+/* Show caption on hover */
+.All .ImageAll:hover .caption {
+  opacity: 1;
+  /* Show caption on hover */
+}
+
+.Container3 h2 {
+  font-size: 24px;
+  /* You can adjust the font size as needed */
+  color: #333;
+  /* Text color for h2 elements */
+}
+
+/* Background color for the Container3 div */
+.Container3 {
+  background-color: white;
+  /* You can change this color code to the one you prefer */
+  padding: 20px;
+  /* Adjust the padding as needed */
+}
+
+/* Style for the container */
+.container4 {
+  display: flex;
+  align-items: center;
+  background-color: #96daf5;
+  padding: 20px;
+}
+
+/* Style for the text column (left column) */
+.text-column {
+  flex: 1;
+  /* Take up half of the container width */
+  padding: 30px;
+  /* Add some padding for spacing */
+}
+
+/* Style for the image column (right column) */
+.image-column {
+  flex: 1;
+  /* Take up half of the container width */
+  text-align: right;
+  /* Align image to the right within its column */
+}
+
+/* Style for the image */
+.image-column img {
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its column's width */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-height: 100%;
+}
+
+/* CSS for tag groups */
+.main {
+  border: 2px solid #5f5e5e;
+}
+
+.container5 {
+  text-align: center;
+
+}
+
+.one {
+  display: inline-block;
+  /* Display each group horizontally */
+  margin-right: 20px;
+  /* Add some spacing between groups */
+  vertical-align: top;
+  /* Align groups to the top */
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+
+/* Optional: Style the icons */
+.one i {
+  font-size: 40px;
+  /* Adjust the icon size */
+  margin-right: 5px;
+  /* Add some spacing between the icon and text */
+  display: block;
+}
+
+/* Optional: Style the links */
+.one a {
+  text-decoration: none;
+  /* Remove underlines from links */
+  color: #333;
+  font-size: 40px;
+  /* Set link color */
+}
+
+h2 {
+  font-size: 36px;
+  /* Adjust the font size as needed */
+  color: #333;
+  /* Change the text color */
+  margin-bottom: 20px;
+  /* Add some space below the heading */
+  text-align: left;
+  /* Center align the heading */
+}
+
+/* Style the entire footer */
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Style individual footer sections */
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+/* Style headings in each section */
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Style links in the "Follow Us" section */
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+  margin: 5px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #FF5733;
+  /* Change to your preferred link hover color */
+}
+
+/* Style the list in the "Links" section */
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+/* Style the copyright text */
+.footer-section p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+}
+
+/* Clear the line break on smaller screens */
+@media (max-width: 768px) {
+  .one {
+    display: block;
+    /* Display each group vertically on smaller screens */
+    margin-right: 0;
+    /* Remove right margin */
+  }
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #fff;
+  /* Replace with your preferred border color */
+
+}
+
+.footer-section a {
+  border: 1px solid #fff;
+  /* Replace with your preferred border color */
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 12px;
+  }
+
+}
